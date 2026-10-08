@@ -1,0 +1,11 @@
+{
+  "name": "sentiment-intelligence-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev:frontend": "cd frontend && npm run dev",
+    "build:frontend": "cd frontend && npm run build",
+    "test:frontend": "cd frontend && npx vitest run",
+    "test:backend": "cd backend && python -m pytest"
+  }
+}

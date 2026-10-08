@@ -1,0 +1,311 @@
+{
+  "nb_bow": {
+    "model_id": "nb_bow",
+    "name": "Multinomial Naive Bayes (Bag-of-Words)",
+    "accuracy": 0.8506,
+    "per_class": {
+      "sadness": {
+        "precision": 0.8827,
+        "recall": 0.9196,
+        "f1": 0.9008,
+        "support": 933
+      },
+      "anger": {
+        "precision": 0.843,
+        "recall": 0.8079,
+        "f1": 0.8251,
+        "support": 432
+      },
+      "love": {
+        "precision": 0.794,
+        "recall": 0.6054,
+        "f1": 0.687,
+        "support": 261
+      },
+      "surprise": {
+        "precision": 0.9123,
+        "recall": 0.4522,
+        "f1": 0.6047,
+        "support": 115
+      },
+      "fear": {
+        "precision": 0.8116,
+        "recall": 0.8346,
+        "f1": 0.8229,
+        "support": 387
+      },
+      "joy": {
+        "precision": 0.8466,
+        "recall": 0.916,
+        "f1": 0.8799,
+        "support": 1072
+      }
+    },
+    "confusion_matrix": {
+      "labels": [
+        "sadness",
+        "anger",
+        "love",
+        "surprise",
+        "fear",
+        "joy"
+      ],
+      "matrix": [
+        [
+          858,
+          17,
+          4,
+          1,
+          18,
+          35
+        ],
+        [
+          35,
+          349,
+          5,
+          0,
+          24,
+          19
+        ],
+        [
+          15,
+          5,
+          158,
+          0,
+          0,
+          83
+        ],
+        [
+          9,
+          6,
+          2,
+          52,
+          28,
+          18
+        ],
+        [
+          25,
+          13,
+          2,
+          1,
+          323,
+          23
+        ],
+        [
+          30,
+          24,
+          28,
+          3,
+          5,
+          982
+        ]
+      ]
+    }
+  },
+  "nb_tfidf": {
+    "model_id": "nb_tfidf",
+    "name": "Multinomial Naive Bayes (TF-IDF)",
+    "accuracy": 0.7703,
+    "per_class": {
+      "sadness": {
+        "precision": 0.7662,
+        "recall": 0.9378,
+        "f1": 0.8434,
+        "support": 933
+      },
+      "anger": {
+        "precision": 0.9432,
+        "recall": 0.5764,
+        "f1": 0.7155,
+        "support": 432
+      },
+      "love": {
+        "precision": 0.9841,
+        "recall": 0.2375,
+        "f1": 0.3827,
+        "support": 261
+      },
+      "surprise": {
+        "precision": 1.0,
+        "recall": 0.0696,
+        "f1": 0.1301,
+        "support": 115
+      },
+      "fear": {
+        "precision": 0.8902,
+        "recall": 0.5866,
+        "f1": 0.7072,
+        "support": 387
+      },
+      "joy": {
+        "precision": 0.7112,
+        "recall": 0.9739,
+        "f1": 0.822,
+        "support": 1072
+      }
+    },
+    "confusion_matrix": {
+      "labels": [
+        "sadness",
+        "anger",
+        "love",
+        "surprise",
+        "fear",
+        "joy"
+      ],
+      "matrix": [
+        [
+          875,
+          3,
+          0,
+          0,
+          1,
+          54
+        ],
+        [
+          108,
+          249,
+          0,
+          0,
+          6,
+          69
+        ],
+        [
+          36,
+          1,
+          62,
+          0,
+          0,
+          162
+        ],
+        [
+          32,
+          0,
+          0,
+          8,
+          21,
+          54
+        ],
+        [
+          66,
+          9,
+          0,
+          0,
+          227,
+          85
+        ],
+        [
+          25,
+          2,
+          1,
+          0,
+          0,
+          1044
+        ]
+      ]
+    }
+  },
+  "logreg": {
+    "model_id": "logreg",
+    "name": "Logistic Regression (TF-IDF)",
+    "accuracy": 0.8838,
+    "per_class": {
+      "sadness": {
+        "precision": 0.9115,
+        "recall": 0.9496,
+        "f1": 0.9302,
+        "support": 933
+      },
+      "anger": {
+        "precision": 0.9305,
+        "recall": 0.8056,
+        "f1": 0.8635,
+        "support": 432
+      },
+      "love": {
+        "precision": 0.8626,
+        "recall": 0.6973,
+        "f1": 0.7712,
+        "support": 261
+      },
+      "surprise": {
+        "precision": 0.8831,
+        "recall": 0.5913,
+        "f1": 0.7083,
+        "support": 115
+      },
+      "fear": {
+        "precision": 0.8877,
+        "recall": 0.8372,
+        "f1": 0.8617,
+        "support": 387
+      },
+      "joy": {
+        "precision": 0.8493,
+        "recall": 0.9515,
+        "f1": 0.8975,
+        "support": 1072
+      }
+    },
+    "confusion_matrix": {
+      "labels": [
+        "sadness",
+        "anger",
+        "love",
+        "surprise",
+        "fear",
+        "joy"
+      ],
+      "matrix": [
+        [
+          886,
+          7,
+          0,
+          1,
+          8,
+          31
+        ],
+        [
+          34,
+          348,
+          2,
+          0,
+          8,
+          40
+        ],
+        [
+          8,
+          2,
+          182,
+          0,
+          0,
+          69
+        ],
+        [
+          7,
+          0,
+          1,
+          68,
+          24,
+          15
+        ],
+        [
+          20,
+          12,
+          0,
+          5,
+          324,
+          26
+        ],
+        [
+          17,
+          5,
+          26,
+          3,
+          1,
+          1020
+        ]
+      ]
+    }
+  }
+}
